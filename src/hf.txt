@@ -1,0 +1,4 @@
+background #f4f6fa
+doller background #f4f6fa
+submit #a8e1d2
+checkback #7564e3

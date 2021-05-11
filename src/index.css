@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background: #f4f6fa;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.heading{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    float: left;
+}
+
+.payment-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.payment-div .payment img{
+    height: 70px;
+    width: auto;
+    margin: 10px;
+}
+.list-payment{
+    display: flex;
+}
+
+.payment-div .payment{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    background: white;
+    height: 200px;
+    width: 40%;
+    align-items: center;
+    flex-wrap: row;
+    border-radius: 6px;
+}
+
+.payment:hover{
+    box-shadow: 0px 20px 36px -9px rgba(0,0,0,0.75);
+    height: 205px;
+    width: 43%;
+}
+
+.list-payment .payment #check{
+    margin-right: -80%;
+    margin-top: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.payment span{
+    margin: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.payments-footer{
+    margin: 30px 15px;
+    line-height: 20px;
+}
+
+.amountForm h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 16px;
+}
+
+.amountForm form{
+    display: flex;
+    flex-direction: column;
+}
+
+.amountForm form label{
+    margin-top: 10px;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.amountForm form input{
+    width: 95%;
+    margin: 10px 10px;
+   padding: 20px 60px;
+    border-radius: 5px;
+    border: none;
+}
+
+.amountForm form button{
+    padding:10px;
+    width: 40%;
+    margin: 25px auto;
+    border: none;
+    background: #a8e1d2;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.elements{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.elements span{
+    margin: 2px;
+    position: absolute;
+    left: 12px;
+    width: 14px;
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
+    background: #dee5f2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+
+  }
+
+#left-arrow{
+    height: 20px;
+    width: 20px;
+    margin: 20px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .list-payment .payment #check{
+        margin-right: -70%;
+    }
+    
 }

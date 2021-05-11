@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import AmountForm from "./components/amountForm/AmountForm";
+import Payment from "./components/payment/Payment";
+import arrow from "./left-arrow.svg"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="nav">
+        <img id="left-arrow" src={arrow} alt="arrow" />
+        <h3 className="heading">Cash out</h3>
+      </div>
+      <Payment />
+      <AmountForm />
     </div>
   );
 }
